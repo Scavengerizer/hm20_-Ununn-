@@ -1,0 +1,244 @@
+/* rools */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,700i&display=swap");
+/*
+    Level text : #EC9B3B
+    1st card stats: #EC9B3B
+    2nd card stats: #4FACFF
+    3rd card stats: #78ad29
+*/
+:root {
+  --level-text:#EC9B3B;
+  --one-card: #EC9B3B;
+  --two-card:#4FACFF;
+  --three-card: #78ad29;
+  /* we use var(and here name of color)*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  max-width: 100%;
+  margin: auto;
+  background-color: #e9807e;
+}
+
+header {
+  background-color: #1b262c;
+  width: 100%;
+  height: 16.6vh;
+  margin: auto;
+}
+
+button {
+  background: inherit;
+  cursor: pointer;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px;
+}
+
+.headsubhead {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo {
+  padding-top: 10px;
+  width: 125px;
+  border-radius: 50%;
+}
+
+.headsubhead h1 {
+  letter-spacing: 5px;
+  font-size: 60px;
+  font-family: 'Source Sans Pro';
+  font-weight: 700;
+}
+
+.headsubhead h5 {
+  font-family: 'Source Sans Pro';
+  font-weight: 200;
+  font-size: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.items li {
+  padding: 0 50px;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item {
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: #ed6663;
+}
+
+.items button {
+  border: none;
+  border-radius: 10%;
+  padding: 10px 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.items button:hover {
+  background-color: #ed6663;
+  color: #1b262c;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+/* container */
+.container {
+  width: 1500px;
+  margin: 7% auto;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-one {
+  width: 390px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 18px 28px -7px rgba(0, 0, 0, 0.43);
+          box-shadow: 0px 18px 28px -7px rgba(0, 0, 0, 0.43);
+  text-align: center;
+  margin: 0px 80px 0px 80px;
+  transition:0.3s;
+}
+.card-one:hover{
+  -webkit-box-shadow: -1px 0px 30px 9px rgba(255,255,255,0.9);
+-moz-box-shadow: -1px 0px 30px 9px rgba(255,255,255,0.9);
+box-shadow: -1px 0px 30px 9px rgba(255,255,255,0.9);
+  transition:0.5s;
+  transform:scale(1.2);
+}
+
+.card-one .image {
+  background-image: url("../imgs/card-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 260px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-one .image img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  top: 20px;
+  left: 60px;
+}
+
+.card-one .contant {
+  padding-top: 40px;
+}
+
+.card-one .contant span {
+  display: block;
+  color: var(--level-text);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.card-one .contant h1 {
+  letter-spacing: 2px;
+}
+
+.card-one .contant p {
+  padding: 13px;
+  color: #BEBFBE;
+  font-size: 15px;
+  text-justify: distribute-all-lines;
+}
+
+.card-one .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.card-one .footer .strength {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: var(--level-text);
+  border-right: 1px solid #000;
+  padding: 10px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.card-one .footer .speed {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: var(--level-text);
+  border-right: 1px solid #000;
+  padding: 10px;
+}
+
+.card-one .footer .cost {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: var(--level-text);
+  border-right: 0px;
+  padding: 10px;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.card-one .footer h2 {
+  padding: 5px 0px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+/*# sourceMappingURL=plans.css.map */
